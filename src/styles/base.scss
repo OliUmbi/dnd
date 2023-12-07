@@ -1,0 +1,18 @@
+@use "variables.scss";
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+
+body {
+  margin: 0;
+  background-color: variables.$white-light;
+  color: variables.$black-dark;
+
+}

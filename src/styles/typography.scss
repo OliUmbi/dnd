@@ -1,0 +1,94 @@
+@use "variables.scss";
+
+@font-face {
+  font-family: geist;
+  font-display: swap;
+  src: url(public/assets/geist.woff2) format("woff2");
+}
+
+body {
+  font-family: geist, monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, p, small {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 5.125rem;
+
+  @media screen and (max-width: variables.$breakpoint-l) {
+    font-size: 3.5rem;
+    line-height: 4.375rem;
+  }
+
+  @media screen and (max-width: variables.$breakpoint-m) {
+    font-size: 3rem;
+    line-height: 3.875rem;
+  }
+
+  @media screen and (max-width: variables.$breakpoint-s) {
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+  }
+
+  @media screen and (max-width: variables.$breakpoint-xs) {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 5.125rem;
+
+  @media screen and (max-width: variables.$breakpoint-l) {
+    font-size: 4rem;
+    line-height: 4.375rem;
+  }
+
+  @media screen and (max-width: variables.$breakpoint-m) {
+    font-size: 3.5rem;
+    line-height: 3.875rem;
+  }
+
+  @media screen and (max-width: variables.$breakpoint-s) {
+    font-size: 3rem;
+    line-height: 3.3125rem;
+  }
+
+  @media screen and (max-width: variables.$breakpoint-xs) {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+
+  @media screen and (max-width: variables.$breakpoint-l) {
+    font-size: 1.0625rem;
+    line-height: 1.625rem;
+  }
+
+  @media screen and (max-width: variables.$breakpoint-m) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  @media screen and (max-width: variables.$breakpoint-s) {
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+  }
+
+  @media screen and (max-width: variables.$breakpoint-xs) {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+}

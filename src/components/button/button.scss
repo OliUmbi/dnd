@@ -1,0 +1,11 @@
+@use "src/styles/variables";
+
+.button {
+  padding: 1rem 2rem;
+  background-color: variables.$white;
+  border: none;
+
+  &:hover {
+    background-color: variables.$white-dark;
+  }
+}

@@ -12,7 +12,7 @@ export const properties = {
   },
   get(name: string) {
     return () => {
-      let value =localStorage.getItem(name)
+      let value = localStorage.getItem(name)
 
       if (value === null) {
         return -99;

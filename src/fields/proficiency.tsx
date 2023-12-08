@@ -1,0 +1,48 @@
+import Field from "../components/field/field";
+import Input from "../components/input/input";
+import useProperty from "../hooks/use-property";
+import {useEffect} from "react";
+
+const Proficiency = () => {
+
+  const [level] = useProperty("Level")
+
+  const [proficiency, setProficiency] = useProperty("Proficiency");
+
+
+  useEffect(() => {
+
+    if (level <= 0) {
+      setProficiency(-1);
+      return;
+    }
+    if (level <= 4) {
+      setProficiency(2);
+      return;
+    }
+    if (level <= 8) {
+      setProficiency(3);
+      return;
+    }
+    if (level <= 12) {
+      setProficiency(4);
+      return;
+    }
+    if (level <= 16) {
+      setProficiency(5);
+      return;
+    }
+    if (level <= 20) {
+      setProficiency(6);
+      return;
+    }
+  }, [level])
+
+  return (
+      <Field xl={2} l={1} m={1} s={1} xs={1}>
+        <Input value={proficiency} title="proficiency bonus"/>
+      </Field>
+  )
+}
+
+export default Proficiency;

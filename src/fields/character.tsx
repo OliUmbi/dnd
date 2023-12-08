@@ -5,7 +5,7 @@ import Row from "../components/row/row";
 const Character = () => {
 
   return (
-      <Field xl={9} l={5} m={3} s={2} xs={1}>
+      <Field xl={6} l={5} m={3} s={2} xs={1}>
         <Row>
           <Detail title="Class" value="Paladin"/>
           <Detail title="Race" value="Tiefling"/>

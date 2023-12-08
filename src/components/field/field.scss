@@ -1,0 +1,21 @@
+@use "src/styles/variables";
+
+.field {
+  grid-column: auto / span var(--field-xl);
+
+  @media screen and (max-width: variables.$breakpoint-l) {
+    grid-column: auto / span var(--field-l);
+  }
+
+  @media screen and (max-width: variables.$breakpoint-m) {
+    grid-column: auto / span var(--field-m);
+  }
+
+  @media screen and (max-width: variables.$breakpoint-s) {
+    grid-column: auto / span var(--field-s);
+  }
+
+  @media screen and (max-width: variables.$breakpoint-xs) {
+    grid-column: auto / span var(--field-xs);
+  }
+}

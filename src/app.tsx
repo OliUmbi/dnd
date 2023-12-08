@@ -1,12 +1,18 @@
 import "./app.scss";
+import Character from "./fields/character";
+import Abilities from "./fields/abilities";
+import Title from "./fields/title";
 
 const App = () => {
 
+  // todo add level
+
   return (
-      <div>
-        <h1>yeet</h1>
-        <p>Adds support for Cyrillic characters. Sans and Mono now support the following languages: Belarusian, Bulgarian, Chechen, Macedonian, Russian, Serbian, Ukrainian, and Uzbek.</p>
-      </div>
+      <main>
+        <Title/>
+        <Character/>
+        <Abilities/>
+      </main>
   )
 }
 

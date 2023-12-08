@@ -1,0 +1,26 @@
+@use "src/styles/variables";
+
+.input {
+
+  input {
+    width: 100%;
+    padding: 1rem;
+    background-color: variables.$white;
+    border: none;
+    text-align: center;
+
+    &:hover {
+      background-color: variables.$white-dark;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type=number] {
+      -moz-appearance: textfield;
+    }
+  }
+}

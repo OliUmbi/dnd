@@ -1,0 +1,9 @@
+.ability {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
+  .ability__title {
+    grid-column: 1 / span 2;
+  }
+}

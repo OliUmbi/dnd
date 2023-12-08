@@ -1,21 +1,26 @@
 @use "src/styles/variables";
 
 .field {
-  grid-column: auto / span var(--field-xl);
+  grid-column: auto / span var(--field-column-xl);
+  grid-row: auto / span var(--field-row-xl);
 
   @media screen and (max-width: variables.$breakpoint-l) {
-    grid-column: auto / span var(--field-l);
+    grid-column: auto / span var(--field-column-l);
+    grid-row: auto / span var(--field-row-l);
   }
 
   @media screen and (max-width: variables.$breakpoint-m) {
-    grid-column: auto / span var(--field-m);
+    grid-column: auto / span var(--field-column-m);
+    grid-row: auto / span var(--field-row-m);
   }
 
   @media screen and (max-width: variables.$breakpoint-s) {
-    grid-column: auto / span var(--field-s);
+    grid-column: auto / span var(--field-column-s);
+    grid-row: auto / span var(--field-row-s);
   }
 
   @media screen and (max-width: variables.$breakpoint-xs) {
-    grid-column: auto / span var(--field-xs);
+    grid-column: auto / span var(--field-column-xs);
+    grid-row: auto / span var(--field-row-xs);
   }
 }

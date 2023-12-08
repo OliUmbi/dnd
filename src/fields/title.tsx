@@ -1,11 +1,10 @@
 import Field from "../components/field/field";
-import Detail from "../components/detail/detail";
-import Row from "../components/row/row";
 
 const Title = () => {
 
   return (
-      <Field xl={9} l={5} m={3} s={2} xs={1}>
+      <Field cxl={5} cl={4} cm={3} cs={2} cxs={1}
+             rxl={1} rl={1} rm={1} rs={1} rxs={1}>
         <h1>D&D Character Sheet</h1>
         <h4>Sir. Lewis Lawyerton the 3rd and a half</h4>
       </Field>

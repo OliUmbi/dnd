@@ -6,7 +6,8 @@ const Level = () => {
   const [level, setLevel] = useProperty("Level");
 
   return (
-      <Field xl={1} l={1} m={1} s={1} xs={1}>
+      <Field cxl={1} cl={1} cm={1} cs={1} cxs={1}
+             rxl={1} rl={1} rm={1} rs={1} rxs={1}>
         <Input value={level} title="Level" onChange={value => setLevel(value)}/>
       </Field>
   )

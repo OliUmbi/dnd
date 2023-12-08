@@ -1,10 +1,15 @@
 import {ReactNode} from "react";
 
 export interface FieldProps {
-  children: ReactNode;
-  xl: number,
-  l: number,
-  m: number,
-  s: number,
-  xs: number
+  children: ReactNode,
+  cxl: number,
+  cl: number,
+  cm: number,
+  cs: number,
+  cxs: number,
+  rxl: number,
+  rl: number,
+  rm: number,
+  rs: number,
+  rxs: number,
 }

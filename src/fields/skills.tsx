@@ -5,8 +5,8 @@ import Skill from "../components/skill/skill.tsx";
 const Skills = () => {
 
   return (
-      <Field cxl={2} cl={1} cm={1} cs={1} cxs={1}
-             rxl={4} rl={1} rm={1} rs={1} rxs={1}>
+      <Field cxl={1} cl={1} cm={1} cs={1} cxs={1}
+             rxl={6} rl={1} rm={1} rs={1} rxs={1}>
         <Column>
           <small>Skills</small>
           <Skill title="Acrobatics" ability="Dexterity" proficient={false}/>

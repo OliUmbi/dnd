@@ -5,7 +5,7 @@ import Skill from "../components/skill/skill.tsx";
 const Saving = () => {
 
   return (
-      <Field cxl={2} cl={1} cm={1} cs={1} cxs={1}
+      <Field cxl={1} cl={1} cm={1} cs={1} cxs={1}
              rxl={2} rl={1} rm={1} rs={1} rxs={1}>
         <Column>
           <small>Saving Throws</small>

@@ -9,11 +9,9 @@ const Hit = () => {
   const [level] = useProperty("Level")
   const [hit, setHit] = useProperty("Hit")
 
-  const long = () => {
+  listen("long", () => {
     setHit(level);
-  };
-
-  listen("long", long)
+  })
 
   return (
       <Field cxl={2} cl={1} cm={1} cs={1} cxs={1}
